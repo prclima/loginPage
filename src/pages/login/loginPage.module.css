@@ -44,7 +44,10 @@
 .loginImage img {
   width: 500px;
 }
-
+.form {
+  display: flex;
+  flex-direction: column;
+}
 .check {
   display: flex;
   flex-direction: row;
