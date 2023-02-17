@@ -29,7 +29,7 @@ function Login(props) {
 
           <div className={style.loginInput}>
             <form className={style.form}>
-              <h2 className="title">Welcome</h2>
+              <h2 className="title">Sign in</h2>
 
               <label htmlFor="username" className="label">
                 User Name
@@ -58,7 +58,9 @@ function Login(props) {
             <div className={style.check}>
               <input type="checkbox" id="remember" name="remember" />
               <label htmlFor="remember">Remember me</label>
-              <a href="###">Forgot password?</a>
+              <span>
+                Forgot your password? <a href="###"> Click here</a>
+              </span>
             </div>
           </div>
         </div>

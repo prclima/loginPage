@@ -48,6 +48,13 @@
   display: flex;
   flex-direction: column;
 }
+.form::after {
+  content: "";
+  width: 25rem;
+  height: 1px;
+  background-color: #5d5d5d;
+  margin-top: 1rem;
+}
 .check {
   display: flex;
   flex-direction: row;
@@ -71,4 +78,139 @@
   font-size: 1rem;
   font-weight: 1000;
   font-family: "Poppins", Arial, sans-serif;
+}
+
+@media only screen and (max-width: 960px) {
+  .loginBox {
+    width: 28rem;
+    grid-template-columns: 1fr;
+  }
+  .loginImage img {
+    display: none;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -150px;
+  }
+  .form::after {
+    content: "";
+    width: 25rem;
+    height: 1px;
+    background-color: #5d5d5d;
+    margin-top: 1rem;
+  }
+  .loginInput {
+    margin: 1px;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  .form label {
+    align-self: start;
+    margin-left: 2rem;
+    width: 85%;
+  }
+  .form input {
+    align-self: start;
+    margin-left: 2rem;
+    width: 85%;
+  }
+  .form button {
+    width: 85%;
+  }
+
+  .check {
+    justify-content: space-between;
+    margin: 2rem;
+  }
+  .check input {
+    margin-right: initial;
+  }
+
+  .check label {
+    font-size: 0.8rem;
+    font-weight: 1000;
+    margin-right: 0.8rem;
+  }
+  .check span {
+    font-size: 0.8rem;
+    font-weight: 1000;
+    margin-right: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 499px) {
+  .loginBox {
+    width: 20rem;
+    grid-template-columns: 1fr;
+  }
+  .loginImage img {
+    display: none;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20rem;
+  }
+  .form h2 {
+    align-self: center;
+  }
+  .form::after {
+    content: "";
+    width: 18rem;
+    height: 1px;
+    background-color: #5d5d5d;
+    margin-top: 1rem;
+  }
+  .loginInput {
+    margin: 1px;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  .form label {
+    align-self: start;
+    margin-left: 2rem;
+    width: 85%;
+  }
+  .form input {
+    align-self: start;
+    margin-left: 2rem;
+    width: 250px;
+  }
+  .form button {
+    width: 250px;
+    align-self: flex-start;
+    margin-left: 2rem;
+  }
+
+  .check {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    justify-content: start;
+    align-items: center;
+    width: 20rem;
+  }
+  .check input {
+    margin-right: initial;
+    margin-right: 0.5rem;
+  }
+
+  .check label {
+    font-size: 0.8rem;
+    font-weight: 1000;
+    margin-right: 0.1rem;
+  }
+  .check span {
+    font-size: 0.8rem;
+    font-weight: 1000;
+    margin-right: 0.1rem;
+  }
 }
